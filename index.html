@@ -3,11 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Taskboard</title>
+  <title>Kanban Board</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+
+  <main>
+    <h1>Simple Kanban Board</h1>
+
+    <section class="board">  
+      <section class="list" id="list1">
+        <h2>To Do</h2>
+
+        <div 
+          class="card" 
+          draggable="true" 
+          id="card1"
+        >
+          Implement draggable feature
+        </div>
+
+        <div 
+          class="card" 
+          draggable="true" 
+          id="card2"
+        >
+          Fix bug in feature #2
+        </div>
+      </section>
+
+      <section class="list" id="list2">
+        <h2>In Progress</h2>
+
+        <div 
+          class="card" 
+          draggable="true" 
+          id="card3"
+        >
+          Review pull request
+        </div>
+      </section>
+
+      <section class="list" id="list3">
+        <h2>Done</h2>
+      </section>
+    </section>
+  </main>
+
   <script src="index.js"></script>
 </body>
 </html>
